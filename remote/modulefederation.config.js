@@ -1,25 +1,27 @@
-const { dependencies } = require('./package.json');
+const { dependencies } = require("./package.json");
 
 module.exports = {
-  name: 'remote',
+  name: "remote",
   exposes: {
-    './Button': './src/Button',
+    "./Button": "./src/Button",
+    "./react": "react",
+    "./react-dom": "react-dom",
   },
-  filename: 'remoteEntry.js',
+  filename: "remoteEntry.js",
   library: {
-    name: 'remote',
-    type:'umd',
+    name: "remote",
+    type: "umd",
     // umdNamedDefine: true
   },
   shared: {
-    ...dependencies,
+    // ...dependencies,
     react: {
       singleton: true,
-      requiredVersion: dependencies['react'],
+      requiredVersion: dependencies["react"],
     },
-    'react-dom': {
+    "react-dom": {
       singleton: true,
-      requiredVersion: dependencies['react-dom'],
+      requiredVersion: dependencies["react-dom"],
     },
   },
 };
