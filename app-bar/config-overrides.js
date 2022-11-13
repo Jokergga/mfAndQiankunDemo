@@ -8,7 +8,7 @@ module.exports = {
     config.output.libraryTarget = "umd";
     // config.output.chunkLoadingGlobal​​​​​​​ = `webpackJsonp_${name}`;
     // config.output.globalObject = "window";
-    config.output.publicPath = "http://127.0.0.1:8000/";
+    config.output.publicPath = "http://127.0.0.1:9000/";
 
     config.plugins.push(
       new ModuleFederationPlugin({

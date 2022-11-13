@@ -8,8 +8,8 @@ const sideData = [
   "app-foo",
   "app-bar",
   "components",
-  "/@example/qiankun-slave-app2",
-  "/@example/zebras-mf-app2",
+  // "/@example/qiankun-slave-app2",
+  // "/@example/zebras-mf-app2",
 ];
 
 function App() {

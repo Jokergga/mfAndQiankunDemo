@@ -11,7 +11,7 @@ module.exports = {
     // config.output.chunkLoadingGlobal​​​​​​​ = `webpackJsonp_${name}`;
     config.output.globalObject = "window";
 
-    config.output.publicPath = "http://127.0.0.1:8002/";
+    config.output.publicPath = "http://127.0.0.1:9002/";
 
     config.plugins.push(
       new ModuleFederationPlugin({

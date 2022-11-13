@@ -161,7 +161,6 @@ function getRender(appInstanceId, appContent, legacyRender) {
   return render;
 }
 function getLifecyclesFromExports(scriptExports, appName, global, globalLatestSetProp) {
-  console.log("scriptExports", scriptExports);
   if (validateExportLifecycle(scriptExports)) {
     return scriptExports;
   }

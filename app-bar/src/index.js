@@ -1,9 +1,7 @@
 const App = import("./bootstrap");
 
 const render = (props) => {
-  console.log('app', App);
   App.then((res) => {
-    console.log('res', res);
     res.render(props)
   });
 };

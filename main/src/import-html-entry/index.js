@@ -284,7 +284,6 @@ function _execScripts(entry, scripts) {
   return _getExternalScripts(scripts, fetch, error).then(function (
     scriptsText
   ) {
-    console.log("--scriptSrc--", scriptsText, scripts);
     // scriptsText = [scriptsText[3]];
     // scripts = [scripts[3]];
     var geval = function geval(scriptSrc, inlineScript) {
