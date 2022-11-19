@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import { registerMicroApps, start } from "./qiankun/index";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <BrowserRouter>
@@ -13,13 +13,31 @@ root.render(
   </BrowserRouter>
 );
 
+// if (module.hot) {
+//   module.hot.accept(["./App"], () => {
+//     // ReactDOM.render(<App />, document.getElementById('root'));
+//     const root = ReactDOM.createRoot(document.getElementById("root"));
+//     root.render(
+//       <BrowserRouter>
+//         <App />
+//       </BrowserRouter>
+//     );
+//   });
+// }
+
 registerMicroApps([
-  // {
-  //   name: "umi-slave",
-  //   entry: "//localhost:7002",
-  //   container: "#container",
-  //   activeRule: "/@example/qiankun-slave-app2",
-  // },
+  {
+    name: "micro-app-one",
+    entry: "//localhost:10000/micro-app-one",
+    container: "#container",
+    activeRule: "/micro-app-one",
+  },
+  {
+    name: "slave12",
+    entry: "http://localhost:8002",
+    container: "#container",
+    activeRule: "/slave1",
+  },
   // {
   //   name: "umi-app2",
   //   entry: "//localhost:4002",

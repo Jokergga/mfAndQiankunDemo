@@ -328,6 +328,7 @@ module.exports = function (webpackEnv) {
         // Make sure your source files are compiled, as they will not be processed in any way.
         new ModuleScopePlugin(paths.appSrc, [
           paths.appPackageJson,
+          // TODO:
           reactRefreshRuntimeEntry,
           reactRefreshWebpackPluginRuntimeEntry,
           babelRuntimeEntry,
@@ -420,6 +421,7 @@ module.exports = function (webpackEnv) {
                   ],
                 ],
                 
+                // TODO:
                 plugins: [
                   isEnvDevelopment &&
                     shouldUseReactRefresh &&
@@ -612,6 +614,7 @@ module.exports = function (webpackEnv) {
       new webpack.DefinePlugin(env.stringified),
       // Experimental hot reloading for React .
       // https://github.com/facebook/react/tree/main/packages/react-refresh
+      // TODO:
       isEnvDevelopment &&
         shouldUseReactRefresh &&
         new ReactRefreshWebpackPlugin({
