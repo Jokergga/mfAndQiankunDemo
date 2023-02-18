@@ -17,7 +17,7 @@ module.exports = {
         // library: { type: "umd", name: "app-bar" },
         // 这里指明需要加载的远程模块服务地址
         remotes: {
-          remote: "remote@http://localhost:3000/remoteEntry.js",
+          // remote: "remote@http://localhost:3000/remoteEntry.js",
           // components: "components@http://localhost:8002/remoteEntry.js",
         },
         // 指明需要共享的依赖

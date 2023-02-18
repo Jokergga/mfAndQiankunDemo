@@ -26,18 +26,18 @@ root.render(
 // }
 
 registerMicroApps([
-  {
-    name: "micro-app-one",
-    entry: "//localhost:10000/micro-app-one",
-    container: "#container",
-    activeRule: "/micro-app-one",
-  },
-  {
-    name: "slave12",
-    entry: "http://localhost:8002",
-    container: "#container",
-    activeRule: "/slave1",
-  },
+  // {
+  //   name: "micro-app-one",
+  //   entry: "//localhost:10000/micro-app-one",
+  //   container: "#container",
+  //   activeRule: "/micro-app-one",
+  // },
+  // {
+  //   name: "slave12",
+  //   entry: "http://localhost:8002",
+  //   container: "#container",
+  //   activeRule: "/slave1",
+  // },
   // {
   //   name: "umi-app2",
   //   entry: "//localhost:4002",
@@ -56,12 +56,12 @@ registerMicroApps([
     container: "#container",
     activeRule: "/app-foo",
   },
-  {
-    name: "components",
-    entry: "//localhost:9002",
-    container: "#container",
-    activeRule: "/components",
-  },
+  // {
+  //   name: "components",
+  //   entry: "//localhost:9002",
+  //   container: "#container",
+  //   activeRule: "/components",
+  // },
 ]);
 // 启动 qiankun
 start({
