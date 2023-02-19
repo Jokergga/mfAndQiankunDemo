@@ -1,6 +1,4 @@
 import { injectIntoGlobalHook } from 'react-refresh/cjs/react-refresh-runtime.development'
-// import { injectIntoGlobalHook } from './react-refresh-runtime.development'
-
 import ReactDOM from 'react-dom'
 
 export const injectBaseReactRefresh = () => {
