@@ -1,0 +1,11 @@
+{
+  "name": "mf-qiankun-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "start-all": "npx concurrently \"yarn:dev:*\" --prefix-colors dim",
+    "dev:app-bar": "cd app-bar && yarn dev",
+    "dev:app-foo": "cd app-foo && yarn dev",
+    "dev:main": "cdmain && yarn dev",
+    "dev:components": "cd components && yarn dev"
+  }
+}
